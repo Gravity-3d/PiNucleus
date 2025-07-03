@@ -20,3 +20,11 @@ Might add more software later down the line based on actual performance, but thi
 # Core Values
 
 This project aims to build a modern, AI-powered entreprenuer focused office. It does most of the things by itself, leaving the owner free for actual work to do. Some specific modules, such as PiPrint (a 3D+PCB printer), are focused completely towards them. I aim to provide each person with the modules they need, their own subset of PiVerse, with the PiNucleus at the center as their assistant.
+
+# BOM
+
+| Item       | Total Cost                     | Link        |
+|--------------|---------------------------------|-----------------|
+| **Raspberry Pi 5 16GB**      | ~$150       | [https://www.silverlineelectronics.in/products/raspberry-pi-5-16gb-ram-silverline-raspberry-pi-india?variant=46201981010142&country=IN&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AfmBOopvJGzOQRy6fDcyLoFzoeTpJn_8FkbO2ofecV5iPcxqrfnYpYndjLs]   |
+| **Raspberry Pi 5 256GB SSD kit**      | ~$46        | [https://www.silverlineelectronics.in/products/raspberry-pi-official-ssd-kit-iops3-40k-256gb-silverline-electronics-official-distributor?_pos=2&_sid=c2dcb73a1&_ss=r]    |
+| **WD Blue 4TB HDD** with shipping      | ~$125      | [https://www.amazon.com/Western-Digital-Blue-Internal-Drive/dp/B0BNGL4BND/ref=sr_1_1?crid=2QP8F1NOCBH6Y&dib=eyJ2IjoiMSJ9.wS52W-qaFHO2Apa1IPqbNPGscxxS1A7nezjBum6-qtAvCfwSXRjrxQPcHHGXHwvGBQYODQ7C7HlyYirKSPYeeO1vpTBXNyL6kc1kLhR13xy0f3PafrmzzjmjnLwye9_tRYfC9e6T8E14JtvJTEDdITBgrKvdl4ih-yHpf4ZH9i_UuZUq6lb0eikFsVT9Qsh04lJaQtUxN9ly2ysH32WmYAymVqJ8TPvTY6DP1kLlll0.kQsVlX0_Kn4vHU8BtogHApi2xlSZjUfbrkMk0bXh6vI&dib_tag=se&keywords=6TB%2BHDD&qid=1751553380&sprefix=tb%2Bhdd%2Caps%2C517&sr=8-1&th=1]  |
