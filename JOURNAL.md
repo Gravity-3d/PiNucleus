@@ -1,0 +1,3 @@
+# Pre-GitHub
+
+This is a summary of the time i spent on this project's software, since this was before i knew about highway. The total time spent is around 10 hours, mainly running docker containers and seeing that everuthing works. The entire STT -> LLM -> TTS workflow is working well on my laptop, but the actual testing on the Raspberry Pi 5 will seal the workflow. The storsge thing is currently untouched, with no work done on it till now if i am being honest. Now, after this repository is made, i will start the actual journaling and updating.
