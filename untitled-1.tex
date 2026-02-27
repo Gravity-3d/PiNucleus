@@ -1,0 +1,741 @@
+\documentclass[12pt,a4paper]{article}
+
+% ---------- PACKAGES ----------
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{chemfig}
+\usepackage[version=4]{mhchem}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
+
+\setstretch{1.15}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\thepage}
+
+% ---------- TITLE / META ----------
+\newcommand{\studentname}{HRIDYANSH Bhardwaj}
+\title{\vspace*{3cm}\textbf{ISC CLASS XI CHEMISTRY REVISION BOOKLET}\\[0.5cm]
+\large (Revised Syllabus 2025--26)\\[4cm]
+\large \emph{``Chemistry is the bridge between the microscopic world and macroscopic reality.''}\\[6cm]}
+\author{\studentname}
+\date{}
+
+% ---------- SECTION FORMATTING ----------
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{0.5em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection}{0.5em}{}
+
+% ---------- DOCUMENT ----------
+\begin{document}
+
+% COVER PAGE (PAGE 1)
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\maketitle
+\thispagestyle{empty}
+\clearpage
+
+% BLANK PAGE (PAGE 2)
+\thispagestyle{empty}
+\mbox{}
+\clearpage
+
+% CONTENT STARTS FROM PAGE 3
+\setcounter{page}{3}
+
+\tableofcontents
+\clearpage
+
+% ============================================================
+% 1. CLASSIFICATION OF ELEMENTS AND PERIODICITY IN PROPERTIES
+% ============================================================
+
+\section{Classification of Elements and Periodicity in Properties}
+
+\subsection{Modern Periodic Law and Periodic Table}
+
+\subsubsection{Modern Periodic Law}
+Modern Periodic Law: The physical and chemical properties of elements are a periodic function of their atomic numbers.  
+The long form of the periodic table is based on electronic configurations and consists of 7 periods (horizontal rows) and 18 groups (vertical columns).
+
+\subsubsection{Types of Elements}
+\begin{itemize}
+    \item \textbf{Representative elements (s- and p-block):} Groups 1, 2 and 13--18.
+    \item \textbf{Transition elements (d-block):} Groups 3--12.
+    \item \textbf{Inner transition elements (f-block):} Lanthanoids and actinoids.
+    \item \textbf{Metals, non-metals and metalloids:} Classified by metallic character and typical oxide/ hydride formation.
+\end{itemize}
+
+\subsection{Periodic Trends in Properties}
+
+\subsubsection{Atomic Radius}
+\textbf{Definition:} Distance from the nucleus to the outermost shell of electrons.
+
+Trends:
+\begin{itemize}
+    \item Across a period: atomic radius decreases due to increase in effective nuclear charge with almost constant shielding.
+    \item Down a group: atomic radius increases due to addition of new shells despite some increase in nuclear charge.
+\end{itemize}
+
+\subsubsection{Ionic Radius}
+\begin{itemize}
+    \item Cations are smaller than their parent atoms due to loss of electrons and increase in effective nuclear charge per electron.
+    \item Anions are larger than their parent atoms due to electron–electron repulsions and decreased effective nuclear charge per electron.
+    \item For isoelectronic species, the greater the nuclear charge, the smaller the ionic radius.
+\end{itemize}
+
+\subsubsection{Ionisation Enthalpy}
+Ionisation enthalpy is the minimum energy required to remove the most loosely bound electron from an isolated gaseous atom.  
+
+Trends:
+\begin{itemize}
+    \item Across a period: increases due to increase in nuclear charge and decrease in atomic radius.
+    \item Down a group: decreases because the outer electron is further from the nucleus and more shielded.
+\end{itemize}
+
+Important anomalies: Be and N (in period 2), Mg and P (in period 3) have slightly higher ionisation enthalpies than expected because of stable electronic configurations (filled or half-filled subshells).
+
+\subsubsection{Electron Gain Enthalpy}
+Electron gain enthalpy is the enthalpy change when an electron is added to an isolated gaseous atom. A more negative value means greater tendency to accept an electron.
+
+Trends:
+\begin{itemize}
+    \item Across a period: generally becomes more negative due to increasing nuclear charge.
+    \item Down a group: becomes less negative due to increasing atomic size and shielding.
+\end{itemize}
+
+Exceptions:
+\begin{itemize}
+    \item Group 18 (noble gases): positive values due to stable octet.
+    \item Group 15: less negative due to stable half-filled p-subshell.
+    \item Fluorine has less negative electron gain enthalpy than chlorine due to very small size and strong inter-electronic repulsions in the compact 2p subshell.
+\end{itemize}
+
+\subsubsection{Electronegativity}
+Electronegativity is the tendency of an atom to attract the shared pair of electrons towards itself in a covalent bond.
+
+Trends:
+\begin{itemize}
+    \item Increases across a period (increasing nuclear charge, decreasing size).
+    \item Decreases down a group (increasing size, shielding).
+    \item Fluorine is the most electronegative element.
+\end{itemize}
+
+\subsubsection{Valence and Valency}
+Valence is the combining capacity of an element, generally equal to the number of electrons in the outermost shell or the number required to complete the octet.  
+
+In a period, valence with respect to hydrogen and oxygen first increases and then may show multiple oxidation states in p-block elements.
+
+\clearpage
+
+% ==========================================
+% 2. CHEMICAL BONDING AND MOLECULAR STRUCTURE
+% ==========================================
+
+\section{Chemical Bonding and Molecular Structure}
+
+\subsection{Types of Chemical Bonds}
+
+\begin{itemize}
+    \item \textbf{Ionic bond:} Electrostatic force of attraction between oppositely charged ions, formed by complete transfer of electrons.
+    \item \textbf{Covalent bond:} Shared pair(s) of electrons between atoms, usually non-metals.
+    \item \textbf{Coordinate (dative) bond:} Shared pair of electrons is contributed by only one atom, e.g. formation of \ce{NH4+} from \ce{NH3} and \ce{H+}.
+    \item \textbf{Metallic bond:} Attraction between metal cations and a “sea” of delocalised electrons.
+\end{itemize}
+
+\subsection{Ionic Bonding}
+
+\subsubsection{Conditions for Ionic Bond Formation}
+\begin{itemize}
+    \item Low ionisation enthalpy of the metal.
+    \item High electron gain enthalpy (more negative) of the non-metal.
+    \item High lattice enthalpy of the resulting ionic solid to stabilise ions.
+\end{itemize}
+
+\subsubsection{Lattice Enthalpy}
+Lattice enthalpy is the enthalpy change when one mole of an ionic solid is separated into its gaseous ions. A higher lattice enthalpy implies a more stable ionic compound and higher melting point.
+
+\subsection{Covalent Bonding: Lewis Theory and VSEPR}
+
+\subsubsection{Octet Rule and its Limitations}
+Atoms tend to achieve an octet in their valence shell by gaining, losing or sharing electrons. Important limitations include:
+\begin{itemize}
+    \item Incomplete octet: \ce{BeCl2}, \ce{BF3}.
+    \item Expanded octet: \ce{PCl5}, \ce{SF6}.
+    \item Molecules with odd electrons: \ce{NO}, \ce{NO2}.
+\end{itemize}
+
+\subsubsection{VSEPR Theory (Qualitative)}
+Valence Shell Electron Pair Repulsion (VSEPR) theory predicts molecular shapes based on repulsion between electron pairs (bond pairs and lone pairs).  
+Order of repulsion: lone pair–lone pair $>$ lone pair–bond pair $>$ bond pair–bond pair.
+
+Examples:
+\begin{itemize}
+    \item \ce{BeCl2}: linear (AX$_2$).
+    \item \ce{BF3}: trigonal planar (AX$_3$).
+    \item \ce{CH4}: tetrahedral (AX$_4$).
+    \item \ce{NH3}: trigonal pyramidal (AX$_3$E).
+    \item \ce{H2O}: bent (AX$_2$E$_2$).
+\end{itemize}
+
+\subsection{Valence Bond (VB) Theory and Hybridisation}
+
+\subsubsection{Basic Idea}
+A covalent bond is formed by overlap of half-filled atomic orbitals of two atoms, each containing one unpaired electron with opposite spins. Greater overlap means stronger bond.
+
+\subsubsection{Hybridisation and Shapes}
+\begin{itemize}
+    \item \textbf{sp$^3$} (tetrahedral, 109.5\degree): \ce{CH4}, \ce{NH3} (distorted), \ce{H2O} (distorted).
+    \item \textbf{sp$^2$} (trigonal planar, 120\degree): \ce{BF3}, \ce{C2H4}.
+    \item \textbf{sp} (linear, 180\degree): \ce{BeCl2}, \ce{C2H2}.
+\end{itemize}
+
+\subsubsection{Sigma and Pi Bonds}
+\begin{itemize}
+    \item \textbf{Sigma ($\sigma$) bond:} Formed by end-to-end (axial) overlap; can be s–s, s–p or p–p; stronger and allows free rotation.
+    \item \textbf{Pi ($\pi$) bond:} Sideways overlap of p-orbitals; weaker; formed in addition to a sigma bond (e.g. double and triple bonds).
+\end{itemize}
+
+\subsection{Molecular Orbital (MO) Theory (Introductory)}
+Atomic orbitals combine to form molecular orbitals which may be bonding or antibonding.  
+
+Bond order $=$ (number of electrons in bonding MOs $-$ number in antibonding MOs)/2.  
+If bond order is zero, the molecule is unstable (e.g. \ce{He2}).
+
+\subsection{Polarity of Bonds and Molecules}
+\begin{itemize}
+    \item A bond between atoms of different electronegativities is polar.
+    \item Dipole moment depends on magnitude of charge separation and distance; vector addition of bond dipoles gives molecular dipole moment.
+    \item Linear symmetrical molecules like \ce{CO2} have zero net dipole moment, whereas bent molecules like \ce{H2O} are polar.
+\end{itemize}
+
+\clearpage
+
+% ==========================
+% 3. CHEMICAL THERMODYNAMICS
+% ==========================
+
+\section{Chemical Thermodynamics}
+
+\subsection{Basic Concepts}
+
+\begin{itemize}
+    \item \textbf{System:} Part of the universe under study; surroundings is the rest.
+    \item \textbf{Types of systems:} Open, closed, isolated.
+    \item \textbf{State functions:} Properties depending only on state (e.g. $U$, $H$, $S$, $G$).
+    \item \textbf{Intensive properties:} Independent of amount (temperature, pressure, density).
+    \item \textbf{Extensive properties:} Dependent on amount (mass, volume, internal energy).
+\end{itemize}
+
+\subsection{First Law of Thermodynamics}
+Energy can neither be created nor destroyed, only converted.  
+Mathematically:
+\[
+\Delta U = q + w
+\]
+where $\Delta U$ is change in internal energy, $q$ is heat supplied to the system, and $w$ is work done on the system.
+
+For expansion work at constant external pressure $P_{\text{ext}}$:
+\[
+w = -P_{\text{ext}}\Delta V
+\]
+
+\subsection{Enthalpy}
+Enthalpy $H$ is defined as:
+\[
+H = U + PV
+\]
+At constant pressure, the heat absorbed or evolved equals the change in enthalpy:
+\[
+\Delta H = q_p
+\]
+
+Standard enthalpy change of reaction $\Delta H^\circ$ is the enthalpy change when reactants in their standard states are converted to products in their standard states.
+
+\subsection{Hess's Law}
+The overall enthalpy change for a reaction is the same whether it occurs in one step or in several steps.  
+This allows calculation of enthalpy changes by adding or subtracting known thermochemical equations.
+
+\subsection{Second Law, Entropy and Spontaneity}
+\begin{itemize}
+    \item \textbf{Second Law (qualitative):} Spontaneous processes are accompanied by an increase in the total entropy of the universe.
+    \item Entropy ($S$) is a measure of randomness or disorder.
+    \item For a process, the change in Gibbs free energy is given by:
+    \[
+    \Delta G = \Delta H - T\Delta S
+    \]
+    \item If $\Delta G < 0$: process is spontaneous (under given conditions).  
+    If $\Delta G > 0$: non-spontaneous.  
+    If $\Delta G = 0$: system at equilibrium.
+\end{itemize}
+
+\subsection{Enthalpy of Important Processes}
+\begin{itemize}
+    \item Enthalpy of formation, combustion, neutralisation, solution, fusion, vaporisation, etc.
+    \item For exothermic reactions, $\Delta H < 0$ (heat released); for endothermic, $\Delta H > 0$.
+\end{itemize}
+
+\clearpage
+
+% ============
+% 4. EQUILIBRIUM
+% ============
+
+\section{Equilibrium}
+
+\subsection{Chemical Equilibrium}
+
+\subsubsection{Concept}
+In a reversible reaction, when the rates of forward and backward reactions become equal, the system is in dynamic equilibrium. Concentrations of reactants and products remain constant but both reactions continue at equal rates.
+
+For a general reaction:
+\[
+aA + bB \rightleftharpoons cC + dD
+\]
+the equilibrium constant in terms of concentration ($K_c$) is:
+\[
+K_c = \frac{[C]^c[D]^d}{[A]^a[B]^b}
+\]
+
+\subsubsection{Equilibrium Constant and Reaction Quotient}
+\begin{itemize}
+    \item $K_c$ and $K_p$ (for partial pressures) are constant at a given temperature.
+    \item Reaction quotient $Q_c$ has the same expression as $K_c$ but for non-equilibrium conditions.
+    \item If $Q_c < K_c$, the reaction proceeds in the forward direction; if $Q_c > K_c$, in the backward direction; if $Q_c = K_c$, the system is at equilibrium.
+\end{itemize}
+
+\subsubsection{Relationship between $K_p$ and $K_c$}
+For gaseous reactions:
+\[
+K_p = K_c (RT)^{\Delta n}
+\]
+where $\Delta n = (\text{moles of gaseous products}) - (\text{moles of gaseous reactants})$.
+
+\subsection{Le Chatelier's Principle}
+When a system at equilibrium is subjected to a change in concentration, pressure, temperature, or volume, the equilibrium shifts in the direction that tends to minimise the imposed change.
+
+Applications:
+\begin{itemize}
+    \item \textbf{Change in concentration:} Adding a reactant shifts equilibrium towards products.
+    \item \textbf{Change in pressure:} For gaseous systems, increasing pressure shifts equilibrium toward the side with fewer moles of gas.
+    \item \textbf{Change in temperature:} Increasing temperature favours the endothermic direction.
+    \item \textbf{Addition of inert gas:} At constant volume, no effect on equilibrium position; at constant pressure, can affect partial pressures.
+\end{itemize}
+
+\subsection{Ionic Equilibrium in Aqueous Solutions (Introductory)}
+
+\subsubsection{Acids and Bases}
+\begin{itemize}
+    \item Arrhenius: acids produce \ce{H+}, bases produce \ce{OH-} in aqueous solution.
+    \item Brønsted–Lowry: acid is a proton donor, base is a proton acceptor.
+\end{itemize}
+
+\subsubsection{\texorpdfstring{$\mathrm{pH}$}{pH} and Ionisation of Water}
+For pure water at 25\degree C:
+\[
+K_w = [\ce{H^+}][\ce{OH^-}] = 1.0 \times 10^{-14}
+\]
+
+\[
+\mathrm{pH} = -\log[\ce{H^+}]
+\]
+
+For a strong monoprotic acid of concentration $C$, assuming complete dissociation, $[\ce{H^+}] \approx C$, so $\mathrm{pH} = -\log C$.
+
+\subsubsection{Weak Acids and Bases (Qualitative)}
+Equilibrium constant for ionisation of a weak acid HA:
+\[
+K_a = \frac{[\ce{H^+}][\ce{A^-}]}{[\ce{HA}]}
+\]
+Larger $K_a$ implies a stronger acid.
+
+Buffers, common ion effect, solubility product and salt hydrolysis are in the syllabus and should be revised from numerical practice; here, focus is on conceptual understanding and setting up expressions.
+
+\clearpage
+
+% =================
+% 5. REDOX REACTIONS
+% =================
+
+\section{Redox Reactions}
+
+\subsection{Concept of Oxidation and Reduction}
+
+\begin{itemize}
+    \item \textbf{Oxidation (modern definition):} Loss of electrons or increase in oxidation number.
+    \item \textbf{Reduction:} Gain of electrons or decrease in oxidation number.
+    \item \textbf{Redox reaction:} Oxidation and reduction occur simultaneously.
+\end{itemize}
+
+\subsection{Oxidation Number}
+
+\subsubsection{Rules (Key Points)}
+\begin{itemize}
+    \item Oxidation number of free elements is zero, e.g. \ce{O2}, \ce{N2}, \ce{P4}.
+    \item For monoatomic ions, oxidation number equals the ionic charge.
+    \item Sum of oxidation numbers of all atoms in a neutral molecule is zero; in an ion, it equals the net charge.
+    \item Common values: \ce{O} generally $-2$ (except peroxides $-1$, \ce{OF2} where O is $+2$); \ce{H} generally $+1$ (in metal hydrides, $-1$); alkali metals $+1$, alkaline earth metals $+2$.
+\end{itemize}
+
+\subsection{Balancing Redox Reactions}
+
+\subsubsection{Oxidation Number Method (Outline)}
+\begin{enumerate}
+    \item Assign oxidation numbers to all atoms.
+    \item Identify species undergoing oxidation and reduction.
+    \item Equalise the total increase and decrease in oxidation numbers by suitable factors.
+    \item Balance the remaining atoms (except O and H).
+    \item Balance oxygen by adding \ce{H2O}, hydrogen by adding \ce{H+} (acidic medium) or \ce{OH-} (basic medium).
+    \item Check both atoms and charges.
+\end{enumerate}
+
+\subsubsection{Ion–Electron (Half-Reaction) Method (Acidic Medium)}
+\begin{enumerate}
+    \item Split the overall equation into oxidation and reduction half reactions.
+    \item Balance atoms other than O and H.
+    \item Balance O by adding \ce{H2O}, H by adding \ce{H+}.
+    \item Balance charges by adding electrons.
+    \item Multiply the half-reactions by suitable integers to equalise electrons.
+    \item Add the half reactions and cancel common terms.
+\end{enumerate}
+
+Practice is essential; focus on redox balancing in acidic and basic media as per ISC requirements.
+
+\clearpage
+
+% ============
+% 6. HYDROCARBONS
+% ============
+
+\section{Hydrocarbons}
+
+\subsection{Classification}
+Hydrocarbons are compounds containing only carbon and hydrogen. They are broadly classified as:
+
+\begin{itemize}
+    \item \textbf{Aliphatic} (open chain): alkanes, alkenes, alkynes.
+    \item \textbf{Alicyclic} (ring but aliphatic character): cycloalkanes, cycloalkenes.
+    \item \textbf{Aromatic}: benzene and its derivatives.
+\end{itemize}
+
+\subsection{Alkanes (Saturated Hydrocarbons)}
+
+\subsubsection{General Formula and Nomenclature}
+Alkanes have the general formula \ce{C_nH_{2n+2}}.  
+IUPAC naming: identify longest chain, number the chain, locate substituents, and name accordingly (e.g. \ce{CH3-CH2-CH3} is propane).
+
+\subsubsection{Important Reactions of Alkanes (with Mechanisms)}
+
+\paragraph{(i) Free-Radical Halogenation (Mechanism Required by ISC)}
+
+General reaction (for methane):
+\[
+\ce{CH4 + Cl2 ->[hv/ \Delta] CH3Cl + HCl}
+\]
+
+Mechanism (chain reaction):
+
+\underline{Initiation step:}
+\[
+\ce{Cl2 ->[hv] 2Cl.}
+\]
+Homolytic fission of \ce{Cl-Cl} bond produces chlorine free radicals.
+
+\underline{Propagation steps:}
+\[
+\ce{Cl. + CH4 -> CH3. + HCl}
+\]
+Chlorine radical abstracts H atom from methane, producing methyl radical.
+
+\[
+\ce{CH3. + Cl2 -> CH3Cl + Cl.}
+\]
+Methyl radical attacks \ce{Cl2}, forming chloromethane and a new chlorine radical.  
+
+These two propagation steps repeat many times, leading to chain growth and further substitution (dichloro-, trichloro- products).
+
+\underline{Termination steps:} (radicals combine)
+\[
+\ce{Cl. + Cl. -> Cl2}
+\]
+\[
+\ce{CH3. + CH3. -> C2H6}
+\]
+\[
+\ce{CH3. + Cl. -> CH3Cl}
+\]
+
+\paragraph{(ii) Combustion}
+Complete combustion:
+\[
+\ce{CH4 + 2O2 -> CO2 + 2H2O + \text{heat}}
+\]
+For any alkane:
+\[
+\ce{C_nH_{2n+2} + (3n+1)/2 O2 -> nCO2 + (n+1)H2O}
+\]
+
+Incomplete combustion forms carbon monoxide and carbon (soot) when oxygen is limited.
+
+\paragraph{(iii) Pyrolysis (Cracking)}
+At high temperature and in absence of air, alkanes decompose into smaller alkanes, alkenes and hydrogen:
+\[
+\ce{C2H6 ->[773K, \Delta] C2H4 + H2}
+\]
+
+Mechanism involves free radicals generated by homolysis at high temperatures. These radicals undergo $\beta$-cleavage and combination steps to give a mixture of products.
+
+\subsection{Alkenes (Unsaturated Hydrocarbons, C$=$C)}
+
+\subsubsection{General Formula and Nomenclature}
+Alkenes have general formula \ce{C_nH_{2n}}.  
+The position of the double bond is indicated by the lowest possible locant (e.g. \ce{CH3-CH2-CH=CH2} is but-1-ene).
+
+\subsubsection{Electrophilic Addition Reactions (Mechanisms)}
+
+\paragraph{(i) Addition of Hydrogen Halides: Markovnikov's Rule}
+
+Example: Addition of \ce{HBr} to propene:
+\[
+\ce{CH3-CH=CH2 + HBr -> CH3-CHBr-CH3}
+\]
+
+\underline{Mechanism:}
+
+Step 1: Protonation of the double bond  
+The $\pi$ electrons of the double bond attack the proton (electrophile) of HBr:
+\[
+\ce{CH3-CH=CH2 + H^+ -> CH3-CH^+-CH3}
+\]
+A more stable secondary carbocation is formed (Markovnikov orientation).
+
+Step 2: Nucleophilic attack by bromide ion:
+\[
+\ce{CH3-CH^+-CH3 + Br^- -> CH3-CHBr-CH3}
+\]
+
+Thus, the richer get richer: hydrogen attaches to the carbon already carrying more hydrogens, and the halide goes to the more substituted carbon (Markovnikov's rule).
+
+\paragraph{(ii) Anti-Markovnikov (Peroxide Effect) for \ce{HBr}}
+
+In presence of peroxides (\ce{RO-OR}), addition of \ce{HBr} to alkenes follows anti-Markovnikov orientation (Kharasch effect), via a free-radical mechanism.
+
+Example:
+\[
+\ce{CH3-CH=CH2 + HBr ->[ROOR] CH3-CH2-CH2Br}
+\]
+
+\underline{Mechanism: Free-radical chain}
+
+\textbf{Initiation:}
+\[
+\ce{ROOR ->[hv/ \Delta] 2RO.}
+\]
+\[
+\ce{RO. + HBr -> ROH + Br.}
+\]
+
+\textbf{Propagation:}
+\[
+\ce{Br. + CH3-CH=CH2 -> CH3-CH.-CH2Br}
+\]
+Bromine radical adds to double bond giving a more stable radical at the more substituted carbon (here secondary radical).
+
+\[
+\ce{CH3-CH.-CH2Br + HBr -> CH3-CH2-CH2Br + Br.}
+\]
+
+\textbf{Termination:} Radical combination, e.g. \ce{Br. + Br. -> Br2}, \ce{CH3-CH.-CH2Br + Br. -> CH3-CHBr-CH2Br}, etc.
+
+\paragraph{(iii) Addition of Bromine (Bromination of Alkenes)}
+Example:
+\[
+\ce{CH2=CH2 + Br2 -> CH2Br-CH2Br}
+\]
+
+\underline{Mechanism (via bromonium ion):}
+
+Step 1: Formation of bromonium ion  
+\[
+\ce{CH2=CH2 + Br2 ->[polarisation] CH2-CH2^{+}Br^{-}}
+\]
+More accurately, the $\pi$ electrons attack a bromine atom giving a cyclic bromonium ion:
+\[
+\ce{(CH2-CH2)Br^+}
+\]
+
+Step 2: Nucleophilic attack by \ce{Br^-}  
+\[
+\ce{(CH2-CH2)Br^+ + Br^- -> CH2Br-CH2Br}
+\]
+
+The attack occurs from the backside, leading to anti-addition in stereochemical terms (beyond basic ISC but useful).
+
+\paragraph{(iv) Hydration of Alkenes (Formation of Alcohols)}
+Indirect hydration via concentrated \ce{H2SO4}:
+\[
+\ce{CH2=CH2 + H2SO4 -> CH3-CH2OSO3H}
+\]
+\[
+\ce{CH3-CH2OSO3H + H2O -> CH3-CH2OH + H2SO4}
+\]
+
+Mechanism proceeds via protonation of the double bond to give carbocation, followed by attack of nucleophile (water or bisulfate), then hydrolysis.
+
+\paragraph{(v) Ozonolysis (Oxidative Cleavage of Double Bonds)}
+Ozonolysis breaks C=C to give carbonyl compounds (aldehydes/ketones).
+
+Example:
+\[
+\ce{CH2=CH2 + O3 -> CH2(OOO)CH2 ->[Zn/H2O] 2HCHO}
+\]
+
+Mechanism (outline):
+\begin{itemize}
+    \item 1,3-dipolar cycloaddition of ozone across the double bond to form a molozonide.
+    \item Rearrangement of molozonide to a more stable ozonide.
+    \item Reductive cleavage of ozonide (Zn/H$_2$O) to give carbonyl products.
+\end{itemize}
+
+\subsection{Alkynes (Triple-Bond Hydrocarbons)}
+
+\subsubsection{General Formula and Acidity}
+General formula: \ce{C_nH_{2n-2}}.  
+Terminal alkynes (\ce{RC{\equiv}CH}) are weakly acidic; they form metal acetylides with sodium metal or ammoniacal silver nitrate.
+
+Example:
+\[
+\ce{HC{\equiv}CH + 2Na -> NaC{\equiv}CNa + H2}
+\]
+
+\subsubsection{Addition Reactions of Alkynes}
+
+\paragraph{(i) Addition of Hydrogen (\ce{H2})}
+\[
+\ce{HC{\equiv}CH + H2 ->[Lindlar] H2C=CH2}
+\]
+(Lindlar catalyst gives cis-alkene), and with further hydrogenation:
+\[
+\ce{HC{\equiv}CH + 2H2 ->[Pt/Pd/Ni] CH3-CH3}
+\]
+
+\paragraph{(ii) Addition of Halogens and Hydrogen Halides}
+Two moles of halogen can add to form tetrahaloalkanes:
+\[
+\ce{HC{\equiv}CH + 2Br2 -> CHBr2-CHBr2}
+\]
+
+Similarly, addition of two moles of \ce{HCl} forms geminal dihalides.
+
+Mechanisms are similar to electrophilic addition, proceeding via vinyl cations, though not normally asked in depth at ISC.
+
+\subsection{Aromatic Hydrocarbons (Benzene)}
+
+\subsubsection{Structure of Benzene}
+Benzene is planar, cyclic, and has a conjugated system of 6 $\pi$ electrons satisfying Hückel's $(4n+2)$ rule with $n=1$.  
+Each carbon is sp$^2$ hybridised with delocalised $\pi$ electron cloud above and below the ring.
+
+\subsubsection{Electrophilic Aromatic Substitution (EAS Mechanism)}
+
+Typical electrophilic substitution reactions prescribed:
+
+\paragraph{(i) Nitration of Benzene}
+\[
+\ce{C6H6 + HNO3 ->[conc.\ H2SO4,\ \Delta] C6H5NO2 + H2O}
+\]
+
+\underline{Mechanism:}
+
+Step 1: Generation of electrophile (nitronium ion):
+\[
+\ce{HNO3 + 2H2SO4 -> NO2^+ + H3O^+ + 2HSO4^-}
+\]
+
+Step 2: Attack of electrophile on benzene $\pi$ system  
+Benzene donates $\pi$ electrons to \ce{NO2+}, forming a $\sigma$-complex (Wheland intermediate or arenium ion):
+\[
+\ce{C6H6 + NO2^+ -> C6H6NO2^+}
+\]
+
+Step 3: Deprotonation and restoration of aromaticity:
+\[
+\ce{C6H6NO2^+ + HSO4^- -> C6H5NO2 + H2SO4}
+\]
+
+\paragraph{(ii) Halogenation of Benzene (Chlorination/Bromination)}
+\[
+\ce{C6H6 + Cl2 ->[FeCl3] C6H5Cl + HCl}
+\]
+
+\underline{Mechanism:}
+
+Step 1: Generation of electrophile:
+\[
+\ce{Cl2 + FeCl3 -> Cl^+ + FeCl4^-}
+\]
+
+Step 2: Attack of \ce{Cl+} on benzene ring to form a $\sigma$-complex:
+\[
+\ce{C6H6 + Cl^+ -> C6H6Cl^+}
+\]
+
+Step 3: Deprotonation to regain aromaticity:
+\[
+\ce{C6H6Cl^+ + FeCl4^- -> C6H5Cl + FeCl3 + HCl}
+\]
+
+\paragraph{(iii) Friedel–Crafts Alkylation}
+\[
+\ce{C6H6 + CH3Cl ->[AlCl3] C6H5CH3 + HCl}
+\]
+
+\underline{Mechanism:}
+
+Step 1: Generation of carbocation (electrophile):
+\[
+\ce{CH3Cl + AlCl3 -> CH3^+ + AlCl4^-}
+\]
+
+Step 2: Attack on benzene:
+\[
+\ce{C6H6 + CH3^+ -> C6H6CH3^+}
+\]
+
+Step 3: Deprotonation:
+\[
+\ce{C6H6CH3^+ + AlCl4^- -> C6H5CH3 + HCl + AlCl3}
+\]
+
+\paragraph{(iv) Friedel–Crafts Acylation}
+\[
+\ce{C6H6 + CH3COCl ->[AlCl3] C6H5COCH3 + HCl}
+\]
+
+Mechanism is analogous, with acylium ion \ce{CH3CO+} as the electrophile.
+
+\subsection{Isomerism (Very Brief Recap)}
+\begin{itemize}
+    \item Chain isomerism (different carbon skeletons).
+    \item Position isomerism (different position of double/triple bond or substituent).
+    \item Functional isomerism (different functional groups with same molecular formula).
+    \item Geometrical isomerism in alkenes (cis/trans) where each doubly bonded carbon has two different substituents.
+\end{itemize}
+
+% ===========================
+% END OF DOCUMENT
+% ===========================
+
+\end{document}
